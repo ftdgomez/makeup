@@ -1,0 +1,34 @@
+$primary-color: #1994d5 !default;
+$secondary-color: #0e5f8a !default;
+$danger-color: #d31919 !default;
+$success-color: #19d548 !default;
+$warning-color: #d2d519 !default;
+$light-color: #f5f5f5 !default;
+$dark-color: #222 !default;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+// @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,700&amp;display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	// font-family: 'Baloo Thambi 2';
+	//font-family: 'Rubik', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+p{
+  color: #444;
+}
+// Padding And Margin Utils
+@import './bones/utils';
+@import './bones/colors';
+@import './bones/layout';
+@import './bones/text';

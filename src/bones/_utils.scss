@@ -1,0 +1,77 @@
+/* 
+*   Padding and margin utils
+*/
+
+// Padding
+@for $i from 0 through 4{
+  .p{
+    padding: .5em;
+  }
+  .p-#{$i}{
+    padding: 0em + $i;
+  }
+  .pb-#{$i}{
+    padding-bottom: 0em + $i;
+  }
+  .pr-#{$i}{
+    padding-right: 0em + $i;
+  }
+  .pl-#{$i}{
+    padding-left: 0em + $i;
+  }
+  .pt-#{$i}{
+    padding-top: 0em + $i;
+  }
+  .py-#{$i}{
+    padding-bottom: 0em + $i;
+    padding-top: 0em + $i;
+  }
+  .px-#{$i}{
+    padding-right: 0em + $i;
+    padding-left: 0em + $i;
+  }
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// Margin
+@for $i from 0 through 4{
+  .m{
+    margin: .5em;
+  }
+  .m-#{$i}{
+    margin: 0em + $i;
+  }
+  .mb-#{$i}{
+    margin-bottom: 0em + $i;
+  }
+  .mr-#{$i}{
+    margin-right: 0em + $i;
+  }
+  .ml-#{$i}{
+    margin-left: 0em + $i;
+  }
+  .mt-#{$i}{
+    margin-top: 0em + $i;
+  }
+  .my-#{$i}{
+    margin-bottom: 0em + $i;
+    margin-top: 0em + $i;
+  }
+  .mx-#{$i}{
+    margin-right: 0em + $i;
+    margin-left: 0em + $i;
+  }
+}

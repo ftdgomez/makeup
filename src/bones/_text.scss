@@ -1,0 +1,83 @@
+/* 
+  text utils
+*/
+
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-justify{
+  text-align: justify;
+}
+
+.x-large {
+	font-size: 4rem;
+	line-height: 1.2;
+}
+
+.large {
+	font-size: 3rem;
+	line-height: 1.2;
+}
+
+.title {
+	font-size: 1.5rem;
+}
+
+.toupper{
+  text-transform: uppercase;
+}
+.tocap{
+  text-transform: capitalize;
+}
+.tolower{
+  text-transform: lowercase;
+}
+
+.thin{
+  font-size: thin;
+}
+
+.normal{
+  font-size: normal;
+}
+
+.bold{
+  font-size: bold;
+}
+
+.italics{
+  font-style: italic;
+}
+
+
+.whishper{
+	font-size: 14px;
+	display: block;
+	opacity: .8;
+}
+.muted{
+	filter: grayscale(1);
+	opacity: .5;
+}
+
+@media screen and (max-width: 1024px)
+{
+  	/* Text Styles */
+	.x-large {
+	  font-size: 3rem;
+	}
+
+	.large {
+	  font-size: 2rem;
+	}
+
+	.title {
+	  font-size: 1rem;
+	}
+}

@@ -1,0 +1,31 @@
+/* 
+for each color must exist a
+bg-
+color-
+*/
+$primary-color: #1994d5 !default;
+$secondary-color: #0e5f8a !default;
+$danger-color: #d31919 !default;
+$success-color: #19d548 !default;
+$warning-color: #d2d519 !default;
+$light-color: #f5f5f5 !default;
+$dark-color: #222 !default;
+$border-color: #e1e1e1 !default;
+
+$colorSet:
+  "primary" $primary-color,
+  "secondary" $secondary-color,
+  "danger" $danger-color,
+  "success" $success-color,
+  "warning" $warning-color,
+  "light" $light-color,
+  "dark" $dark-color;
+
+@each $name, $color in $colorSet {
+  .bg-#{$name}{
+    background-color: #{$color};
+  }
+  .color-#{$name}{
+    color: #{$color};
+  }
+}
