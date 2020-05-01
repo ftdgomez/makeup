@@ -1,0 +1,30 @@
+{
+  "name": "makeup",
+  "version": "1.0.0",
+  "description": "a css framework for fastest web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "css-minify -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftdgomez/makeup.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "web",
+    "development",
+    "utils"
+  ],
+  "author": "Daniel Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftdgomez/makeup/issues"
+  },
+  "homepage": "https://github.com/ftdgomez/makeup#readme",
+  "devDependencies": {
+    "css-minify": "^1.0.1"
+  }
+}
