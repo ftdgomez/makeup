@@ -14,8 +14,8 @@ $wSet:
 @each $name, $w in $wSet {
   .#{$name}{
     max-width: #{$w}px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -36,6 +36,10 @@ $wSet:
       display: grid;
       grid-template-columns: repeat(#{$i}, 1fr);
     }
+    .gap-#{$i}{
+      column-gap: 0em + $i;
+      grid-gap: 0em  + $i;
+    }
   }
 }
 
@@ -49,7 +53,6 @@ $wSet:
     }
   }
 }
-
 
 // flex utils
 .flex{
@@ -92,6 +95,7 @@ $wSet:
   flex-direction: column;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .all-to-center{
@@ -107,4 +111,13 @@ $wSet:
 }
 .d-none{
   display: none;
+}
+
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
 }

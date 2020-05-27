@@ -1,6 +1,11 @@
-/* 
-  text utils
+/*************************************
+*   Text utilities
+**************************************
 */
+
+p{
+  line-height: 1.5;
+}
 
 .text-center{
   text-align: center;
@@ -15,46 +20,57 @@
   text-align: justify;
 }
 
-.x-large {
+.text-2xl {
 	font-size: 4rem;
 	line-height: 1.2;
 }
 
-.large {
+.text-xl {
 	font-size: 3rem;
 	line-height: 1.2;
 }
 
-.title {
+.text-lg{
+	font-size: 2.25rem;
+}
+
+.text-md{
 	font-size: 1.5rem;
 }
 
-.toupper{
+.text-sm{
+	font-size: 1.115rem;
+}
+
+.text-xs{
+  font-size: .8rem;
+}
+
+.uppercase{
   text-transform: uppercase;
 }
-.tocap{
+.capitalize{
   text-transform: capitalize;
 }
-.tolower{
+.lowercase{
   text-transform: lowercase;
 }
 
 .thin{
-  font-size: thin;
+  font-weight: thin;
 }
 
 .normal{
-  font-size: normal;
+  font-weight: normal;
 }
 
 .bold{
-  font-size: bold;
+  font-weight: bold;
 }
 
 .italics{
   font-style: italic;
 }
-
 
 .whishper{
 	font-size: 14px;
@@ -69,11 +85,11 @@
 @media screen and (max-width: 1024px)
 {
   	/* Text Styles */
-	.x-large {
+	.text-x-large {
 	  font-size: 3rem;
 	}
 
-	.large {
+	.text-large {
 	  font-size: 2rem;
 	}
 

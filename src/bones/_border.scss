@@ -1,0 +1,35 @@
+.border{
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+.border-x{
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+.border-t{
+  border-style: solid;
+  border-top-width: 1px;
+}
+
+.border-b{
+  border-style: solid;
+  border-bottom-width: 1px;
+}
+
+.border-r{
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+.border-l{
+  border-style: solid;
+  border-left-width: 1px;
+}

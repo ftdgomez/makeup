@@ -1,13 +1,5 @@
-
 .shadow{
   box-shadow: 2px 4px 4px rgba($color: #000000, $alpha: .1);
-}
-.full-vh{
-	min-height: 100vh;
-}
-
-.full-w{
-  width: 100%;
 }
 
 .bg-img{
@@ -15,25 +7,15 @@
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
 }
-.border-y{
-	border-top: 1px solid $border-color;
-	border-bottom: 1px solid $border-color;
+
+.bg-fixed{
+  background-attachment: fixed;
 }
-.border-bottom{
-	border-bottom: 1px solid $border-color;
-}
-.border-top{
-	border-top: 1px solid $border-color;
-}
-.border-left{
-  border-left: 1px solid $border-color;
-}
-.border-right{
-  border-right: 1px solid $border-color;
-}
+
 .rounded{
   border-radius: 4px;
 }
+
 .circle{
   border-radius: 999px;
 }
@@ -45,31 +27,17 @@
 .full-w{
   width: 100%;
 }
-
 a{
-  color: $primary-color;
 	text-decoration: none;
   transition: .4s ease;
-  *{
-    color: $dark-color;
+}
+
+.btn{
+  outline: none;
+}
+
+@for $i from 0 through 10{
+  .opacity-#{$i}{
+    opacity: $i / 10;
   }
-}
-
-a:hover{
-	color: $secondary-color;
-}
-
-.btn {
-	display: inline-block;
-	border: none;
-	cursor: pointer;
-	transition: opacity 0.2s ease-in;
-	outline: none;
-	&:hover{
-		color: $light-color;
-	}
-}
-.btn-block {
-display: block;
-width: 100%;
 }

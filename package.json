@@ -26,5 +26,6 @@
   "homepage": "https://github.com/ftdgomez/makeup#readme",
   "devDependencies": {
     "css-minify": "^1.0.1"
-  }
+  },
+  "dependencies": {}
 }

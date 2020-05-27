@@ -1,0 +1,13 @@
+/*************************************
+*   Hover states global
+**************************************
+*/
+.transition{
+  transition: all .4s ease;
+}
+.hover-up:hover{
+  transform: translateY(1em);
+}
+.hover-opacity-full:hover{
+  opacity: 1;
+}

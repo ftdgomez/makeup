@@ -8,24 +8,36 @@ $secondary-color: #0e5f8a !default;
 $danger-color: #d31919 !default;
 $success-color: #19d548 !default;
 $warning-color: #d2d519 !default;
-$light-color: #f5f5f5 !default;
+$light-color: #e1e1e1 !default;
 $dark-color: #222 !default;
-$border-color: #e1e1e1 !default;
-
+$font-color: #333333 !default;
+$white: white;
 $colorSet:
-  "primary" $primary-color,
-  "secondary" $secondary-color,
-  "danger" $danger-color,
-  "success" $success-color,
-  "warning" $warning-color,
-  "light" $light-color,
-  "dark" $dark-color;
+  "primary" $primary-color $light-color,
+  "secondary" $secondary-color $light-color,
+  "danger" $danger-color $light-color,
+  "success" $success-color $light-color,
+  "warning" $warning-color $light-color,
+  "light" $light-color $dark-color,
+  "dark" $dark-color $white,
+  "gray" #646464 white;
 
-@each $name, $color in $colorSet {
+.bg-white{
+  background-color: white;
+}
+@each $name, $color, $text in $colorSet {
   .bg-#{$name}{
     background-color: #{$color};
+    color: #{$text}
   }
   .color-#{$name}{
     color: #{$color};
+  }
+  .border-#{$name}{
+    border-color: #{$color};
+  }
+  .hover-bg-#{$name}:hover{
+    background-color: #{$color};
+    color: #{$text}
   }
 }

@@ -1,0 +1,48 @@
+.p{
+  padding: .5rem;
+}
+.pb{
+  padding-bottom: .5rem;
+}
+.pr{
+  padding-right: .5rem;
+}
+.pl{
+  padding-left: .5rem;
+}
+.pt{
+  padding-top: .5rem;
+}
+.py{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.px{
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+@for $i from 0 through 4{
+  .p-#{$i}{
+    padding: 0em + $i;
+  }
+  .pb-#{$i}{
+    padding-bottom: 0em + $i;
+  }
+  .pr-#{$i}{
+    padding-right: 0em + $i;
+  }
+  .pl-#{$i}{
+    padding-left: 0em + $i;
+  }
+  .pt-#{$i}{
+    padding-top: 0em + $i;
+  }
+  .py-#{$i}{
+    padding-bottom: 0em + $i;
+    padding-top: 0em + $i;
+  }
+  .px-#{$i}{
+    padding-right: 0em + $i;
+    padding-left: 0em + $i;
+  }
+}
