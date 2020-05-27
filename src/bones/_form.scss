@@ -14,4 +14,11 @@ display: block;
 width: calc(100%);
 font-size: 1.2rem;
 }
+
+.form-control{
+  display: flex;
+  padding: 1em;
+  width: calc(100% - 2em);
+  border: 1px solid #e1e1e1;
+}
   
