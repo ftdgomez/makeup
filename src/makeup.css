@@ -994,6 +994,15 @@ textarea {
   font-size: 1.2rem;
 }
 
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  width: calc(100% - 2em);
+  border: 1px solid #e1e1e1;
+}
+
 .p {
   padding: .5rem;
 }
