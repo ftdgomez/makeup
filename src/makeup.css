@@ -797,6 +797,10 @@ querys
 *   Text utilities
 **************************************
 */
+h1, h2, h3, h4, h5, h6, p, .btn, span, code {
+  margin: .25em 0;
+}
+
 p {
   line-height: 1.5;
 }
