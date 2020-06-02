@@ -1415,6 +1415,7 @@ textarea {
 
 .border {
   border-width: 1px;
+  border-color: #e1e1e1;
   border-style: solid;
 }
 
