@@ -7,10 +7,6 @@ for each color must exist a
 bg-
 color-
 */
-.bg-white {
-  background-color: white;
-}
-
 .bg-primary {
   background-color: #1994d5;
   color: #e1e1e1;
@@ -153,6 +149,14 @@ color-
 .hover-bg-gray:hover {
   background-color: #646464;
   color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-none {
+  background-color: transparent;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -915,7 +919,7 @@ p {
   border-radius: 4px;
 }
 
-.circle {
+.circle, .pill {
   border-radius: 999px;
 }
 
@@ -979,6 +983,13 @@ a {
 
 .opacity-10 {
   opacity: 1;
+}
+
+code {
+  background-color: #333333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 /* Forms */
@@ -1461,12 +1472,31 @@ textarea {
 }
 
 .hover-up:hover {
-  -webkit-transform: translateY(1em);
-          transform: translateY(1em);
+  -webkit-transform: translateY(-0.4em);
+          transform: translateY(-0.4em);
 }
 
 .hover-opacity-full:hover {
   opacity: 1;
+}
+
+/*************************************
+*   Button component classes
+*   Extends mixins from
+*   -
+**************************************
+*/
+.btn {
+  padding: 1em 2em;
+  display: inline-block;
+  background-color: #1994d5;
+  color: white;
+}
+
+.btn-outline {
+  padding: 1em 2em;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
 }
 
 body {

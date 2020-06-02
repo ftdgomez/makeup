@@ -16,7 +16,7 @@
   border-radius: 4px;
 }
 
-.circle{
+.circle, .pill{
   border-radius: 999px;
 }
 
@@ -40,4 +40,10 @@ a{
   .opacity-#{$i}{
     opacity: $i / 10;
   }
+}
+code{
+  background-color: #333333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
 }

@@ -11,7 +11,7 @@ $warning-color: #d2d519 !default;
 $light-color: #e1e1e1 !default;
 $dark-color: #222 !default;
 $font-color: #333333 !default;
-$white: white;
+$white-color: white;
 $colorSet:
   "primary" $primary-color $light-color,
   "secondary" $secondary-color $light-color,
@@ -19,12 +19,9 @@ $colorSet:
   "success" $success-color $light-color,
   "warning" $warning-color $light-color,
   "light" $light-color $dark-color,
-  "dark" $dark-color $white,
+  "dark" $dark-color $white-color,
   "gray" #646464 white;
 
-.bg-white{
-  background-color: white;
-}
 @each $name, $color, $text in $colorSet {
   .bg-#{$name}{
     background-color: #{$color};
@@ -40,4 +37,11 @@ $colorSet:
     background-color: #{$color};
     color: #{$text}
   }
+}
+
+.bg-white{
+  background-color: white;
+}
+.bg-none{
+  background-color: transparent;
 }
