@@ -1,7 +1,18 @@
 # Makeup Css
 
-https://cdn.jsdelivr.net/gh/ftdgomez/makeup/src/fonts/gotham.css
-https://cdn.jsdelivr.net/gh/ftdgomez/makeup/css-dist/makeup.min.css
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/ftdgomez/makeup/src/makeup.css"
+/>
+```
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/ftdgomez/makeup/src/makeup.min.css"
+/>
+```
 
 ## Beauty enchancer css framework
 
