@@ -16,6 +16,15 @@
   border-radius: 4px;
 }
 
+.rounded-lg{
+  border-radius: 8px;
+}
+
+.rounded-xl{
+  border-radius: 12px;
+}
+
+
 .circle, .pill{
   border-radius: 999px;
 }
@@ -47,4 +56,28 @@ code{
   padding: 4px 8px;
   border-radius: 4px;
   display: inline-block;
+}
+
+.waves{
+  position:relative;
+  overflow:hidden;
+}
+
+.ripple{
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  z-index:1;
+}
+
+.ripple-dark{
+  background-color: rgba(0,0,0, 0.2);
+}
+
+@keyframes ripple{
+  to{
+     transform: scale(2.5);
+     opacity: 0;
+  }
 }

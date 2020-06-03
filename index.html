@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="./src/makeup.css">
 </head>
 <body>
+  <header class="navbar bg-primary">
+    logo
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button onclick="document.querySelector('.navbar > nav').classList.toggle('menu-active')"><i class="im im-menu-dot-v"></i></button>
+  </header>
   <div class="container-xl pt-2 my-4">
     <h2 class="text-lg">Basic Elements</h2>
     <hr><!-- Separador -->
@@ -107,25 +116,60 @@
         </span>
         <p>Hello</p>
       </label>
-      <label class="flex align-center" for="checkbox2">
-        <span class="checkbox path">
-          <input id="checkbox2" type="checkbox">
-          <svg viewBox="0 0 21 21">
-              <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
-          </svg>
-        </span>
-        <p>Hello</p>
-      </label>
+    </div>
+    <hr>
+    <!--===================================
+    -   Cards!
+    =======================================
+    -->
+    <h4 class="text-md normal">Cards!</h4>
+    <div class="grid-4 gap-1 mb-1">
+      <div class="card">
+        <p>Card Content</p>
+      </div>
+      <div class="card">
+        <p>Card Content</p>
+      </div>
+      <div class="card">
+        <p>Card Content</p>
+      </div>
+      <div class="card">
+        <p>Card Content</p>
+      </div>
+    </div>
+    <div class="grid-4 gap-1">
+      <div class="card card-hover rounded-xl">
+        <div class="card-header">
+          <img class="circle size-1" src="https://api.adorable.io/avatars/150/ftdgomez@adorable.io.png" alt="">
+          <h4 class="text-md">Hello World</h4>
+        </div>
+        <div class="card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, in alias, quod deserunt eveniet minima nostrum saepe doloribus facilis, quia id?</p>
+          <a href="#" class="btn rounded hover-bg-dark">Read more</a>
+        </div>
+        <div class="card-footer">
+          <p class="whishper text-right">Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
     </div>
   </div><!-- End Container -->
-  <header class="navbar bg-primary">
-    logo
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <button onclick="document.querySelector('.navbar > nav').classList.toggle('menu-active')"><i class="im im-menu-dot-v"></i></button>
-  </header>
+<script>
+  const surface = document.querySelectorAll('.waves');
+  function ripple(e){
+    let circle = document.createElement("div");
+    let maxLarge = Math.max(this.clientWidth, this.clientHeight);
+    let rectSurface = this.getBoundingClientRect();
+    let time = (Math.log(maxLarge)/Math.log(Math.exp(1)))/11;
+    circle.style.width = circle.style.height = maxLarge + "px";
+    circle.style.left = e.clientX - rectSurface.left -maxLarge/2 + "px";
+    circle.style.top = e.clientY - rectSurface.top -maxLarge/2 + "px";
+    circle.classList.add("ripple");
+    circle.style.animation = `ripple ${time}s ease-in`;
+    if(this.classList.contains("waves-dark")) circle.classList.add("ripple-dark");
+    this.appendChild(circle);
+    setTimeout(() => this.removeChild(circle),time*1000); 
+  }
+  for(let i=0;i<surface.length;i++) surface[i].addEventListener('click', ripple);
+</script>
 </body>
 </html>

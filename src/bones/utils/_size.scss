@@ -1,0 +1,12 @@
+@for $i from 0 through 12{
+  .size-#{$i}{
+    height: 2em * $i;
+    width: 2em * $i;
+  }
+  .size-x-#{$i}{
+    width: .5em * $i;
+  }
+  .size-y-#{$i}{
+    width: .5em * $i;
+  }
+}

@@ -1,0 +1,37 @@
+.card{
+  min-height: 240px;
+  border: solid #e1e1e1 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .4s ease;
+  .card-header{
+    align-self: flex-start;
+    min-height: 42px;
+    border-bottom: 1px solid #e1e1e1;
+    width: calc(100% - 2em);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+  }
+  .card-body{
+    padding: 1em;
+    p,span{
+      color: #777777;
+    }
+  }
+  .card-footer{
+    width: calc(100% - 2em);
+    border-top: 1px solid #e1e1e1;
+    padding: .5em 1em;
+  }
+  &.card-hover:hover{
+    background-color: $primary-color;
+    cursor: pointer;
+    *{
+      color: white;
+    }
+  }
+}
