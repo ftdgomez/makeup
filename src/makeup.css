@@ -371,6 +371,10 @@ textarea {
   padding: 0.2em 0;
 }
 
+button {
+  border: none;
+}
+
 /* 
 for each color must exist a
 bg-
@@ -2129,6 +2133,7 @@ i {
           justify-content: center;
   -webkit-transition: .4s ease;
   transition: .4s ease;
+  background-color: white;
 }
 
 .card .card-header {
@@ -2170,5 +2175,29 @@ i {
 
 .card.card-hover:hover * {
   color: white;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.modal.modal-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: slideInDown .4s ease forwards;
+          animation: slideInDown .4s ease forwards;
 }
 /*# sourceMappingURL=makeup.css.map */

@@ -1,0 +1,15 @@
+.modal{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba($color: white, $alpha: .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  &.modal-active{
+    display: flex;
+    animation: slideInDown .4s ease forwards;
+  }
+}
