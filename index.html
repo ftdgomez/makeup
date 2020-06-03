@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Show Case</title>
+  <link rel="stylesheet" href="./src/fonts/gotham.css">
+  <link rel="stylesheet" href="./src/makeup.css">
+</head>
+<body>
+  <div class="container-xl pt-2 my-4">
+    <h2 class="text-lg">Basic Elements</h2>
+    <hr><!-- Separador -->
+    <!--===================================
+    -   Buttons!
+    =======================================
+    -->
+    
+    <h4 class="text-md light">Buttons</h4>
+    <h5 class="mt-2">Pick yout style</h5>
+    <div>
+      <a class="btn hover-up" href="#">Default</a>
+      <a href="#" class="btn rounded hover-up">Rounded</a>
+      <a href="#" class="btn pill hover-up">Pill</a>
+      <a href="#" class="btn-outline hover-up">Outline</a>
+    </div>
+    <p class="whishper">
+      *for the hover fx use a <code>hover-</code> class.
+    </p>
+    <h5 class="mt-2">Pick your size</h5>
+    <div>
+      <a href="#" class="btn px-3 py-2 rounded">Large Btn</a>
+      <a href="#" class="btn p-1 rounded">Medium Btn</a>
+      <a href="#" class="btn p rounded">Small Btn</a>
+    </div>
+    <p class="whishper">*Use padding and margin utils to make it bigger or smaller.</p>
+    <h5 class="mt-2">Pick your color</h5>
+    <a href="#" class="btn bg-primary">Primary</a>
+    <a href="#" class="btn bg-secondary">Secondary</a>
+    <a href="#" class="btn bg-danger">Danger</a>
+    <a href="#" class="btn bg-warning">Warning</a>
+    <a href="#" class="btn bg-success">Success</a>
+    <hr><!-- Separador -->
+    <!--===================================
+      -   Links!
+      =======================================
+    -->
+    <h4 class="text-md normal">Links</h4>
+    <div>
+      <a class="color-primary mr-1" href="#">This is a link</a>
+      <a class="color-secondary mr-1" href="#">This is a link</a>
+      <a class="color-danger mr-1" href="#">This is a link</a>
+      <a class="color-primary mr-1" href="#">This is a link</a>
+      <a class="color-warning mr-1" href="#">This is a link</a>
+      <a class="color-success mr-1" href="#">This is a link</a>
+    </div>
+    <p class="whishper">*Just use an anchor tag with a <code>color-</code> class</p>
+    <hr><!-- Separador -->
+    <h4 class="text-md normal">Inputs (Without labels)</h4>
+    <div class="grid-4 gap-1">
+      <input class="form-control rounded" type="text" placeholder="Some text input...">
+      <input class="form-control form-error rounded" type="text" placeholder="Error input..." value="Error input...">
+      <input class="form-control form-success rounded" type="text" placeholder="Success input...">
+      <input class="form-control form-warning rounded" type="text" placeholder="Warning input...">
+    </div>
+    <hr><!-- Separador -->
+    <!--===================================
+    -   FORM INPUTS
+    =======================================
+    -->
+    <h4 class="text-md normal">Inputs (With labels)</h4>
+    <div class="flex justify-between">
+      <div class="form-with-label">
+        <input class="form__field" id="name" name="name" type="text" placeholder="Some text input..." autocomplete="off">
+        <label class="form__label" for="name">Name</label>
+      </div>
+    </div>
+    <!--===================================
+    -   FORM SELECT
+    =======================================
+    -->
+    <h4 class="text-md normal">Inputs Select</h4>
+    <select>
+      <option>This is a native select element</option>
+      <option>Apples</option>
+      <option>Bananas</option>
+      <option>Grapes</option>
+      <option>Oranges</option>
+    </select>
+    <!--===================================
+    -   TEXTAREA
+    =======================================
+    -->
+    <h4 class="text-md normal">Textarea</h4>
+    <textarea class="form-control" placeholder="This is a text area..."></textarea>
+    <!--===================================
+    -   CHECKBOXES
+    =======================================
+    -->
+    <div>
+      <label class="flex align-center" for="checkbox1">
+        <span class="checkbox path">
+          <input id="checkbox1" type="checkbox">
+          <svg viewBox="0 0 21 21">
+              <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+          </svg>
+        </span>
+        <p>Hello</p>
+      </label>
+      <label class="flex align-center" for="checkbox2">
+        <span class="checkbox path">
+          <input id="checkbox2" type="checkbox">
+          <svg viewBox="0 0 21 21">
+              <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+          </svg>
+        </span>
+        <p>Hello</p>
+      </label>
+    </div>
+  </div><!-- End Container -->
+  <header class="navbar bg-primary">
+    logo
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button onclick="document.querySelector('.navbar > nav').classList.toggle('menu-active')"><i class="im im-menu-dot-v"></i></button>
+  </header>
+</body>
+</html>
