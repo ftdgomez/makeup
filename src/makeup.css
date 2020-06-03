@@ -2,167 +2,12 @@
 *   First, reset the browser style
 *   so we can modify all from there
 **************************************/
-/* 
-for each color must exist a
-bg-
-color-
-*/
-.bg-primary {
-  background-color: #1994d5;
-  color: #e1e1e1;
-}
-
-.color-primary {
-  color: #1994d5;
-}
-
-.border-primary {
-  border-color: #1994d5;
-}
-
-.hover-bg-primary:hover {
-  background-color: #1994d5;
-  color: #e1e1e1;
-}
-
-.bg-secondary {
-  background-color: #0e5f8a;
-  color: #e1e1e1;
-}
-
-.color-secondary {
-  color: #0e5f8a;
-}
-
-.border-secondary {
-  border-color: #0e5f8a;
-}
-
-.hover-bg-secondary:hover {
-  background-color: #0e5f8a;
-  color: #e1e1e1;
-}
-
-.bg-danger {
-  background-color: #d31919;
-  color: #e1e1e1;
-}
-
-.color-danger {
-  color: #d31919;
-}
-
-.border-danger {
-  border-color: #d31919;
-}
-
-.hover-bg-danger:hover {
-  background-color: #d31919;
-  color: #e1e1e1;
-}
-
-.bg-success {
-  background-color: #19d548;
-  color: #e1e1e1;
-}
-
-.color-success {
-  color: #19d548;
-}
-
-.border-success {
-  border-color: #19d548;
-}
-
-.hover-bg-success:hover {
-  background-color: #19d548;
-  color: #e1e1e1;
-}
-
-.bg-warning {
-  background-color: #d2d519;
-  color: #e1e1e1;
-}
-
-.color-warning {
-  color: #d2d519;
-}
-
-.border-warning {
-  border-color: #d2d519;
-}
-
-.hover-bg-warning:hover {
-  background-color: #d2d519;
-  color: #e1e1e1;
-}
-
-.bg-light {
-  background-color: #e1e1e1;
-  color: #222;
-}
-
-.color-light {
-  color: #e1e1e1;
-}
-
-.border-light {
-  border-color: #e1e1e1;
-}
-
-.hover-bg-light:hover {
-  background-color: #e1e1e1;
-  color: #222;
-}
-
-.bg-dark {
-  background-color: #222;
-  color: white;
-}
-
-.color-dark {
-  color: #222;
-}
-
-.border-dark {
-  border-color: #222;
-}
-
-.hover-bg-dark:hover {
-  background-color: #222;
-  color: white;
-}
-
-.bg-gray {
-  background-color: #646464;
-  color: white;
-}
-
-.color-gray {
-  color: #646464;
-}
-
-.border-gray {
-  border-color: #646464;
-}
-
-.hover-bg-gray:hover {
-  background-color: #646464;
-  color: white;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-none {
-  background-color: transparent;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url(https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -182,7 +27,6 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   font-size: 1rem;
-  color: #333333;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -523,6 +367,183 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+/* 
+for each color must exist a
+bg-
+color-
+*/
+.btn {
+  background-color: #1994d5;
+}
+
+.bg-primary {
+  background-color: #1994d5;
+  color: #e1e1e1;
+}
+
+.color-primary {
+  color: #1994d5;
+}
+
+.border-primary {
+  border-color: #1994d5;
+}
+
+.hover-bg-primary:hover {
+  background-color: #1994d5;
+  color: #e1e1e1;
+}
+
+.bg-secondary {
+  background-color: #0e5f8a;
+  color: #e1e1e1;
+}
+
+.color-secondary {
+  color: #0e5f8a;
+}
+
+.border-secondary {
+  border-color: #0e5f8a;
+}
+
+.hover-bg-secondary:hover {
+  background-color: #0e5f8a;
+  color: #e1e1e1;
+}
+
+.bg-danger {
+  background-color: #d31919;
+  color: #e1e1e1;
+}
+
+.color-danger {
+  color: #d31919;
+}
+
+.border-danger {
+  border-color: #d31919;
+}
+
+.hover-bg-danger:hover {
+  background-color: #d31919;
+  color: #e1e1e1;
+}
+
+.bg-success {
+  background-color: #19d548;
+  color: #e1e1e1;
+}
+
+.color-success {
+  color: #19d548;
+}
+
+.border-success {
+  border-color: #19d548;
+}
+
+.hover-bg-success:hover {
+  background-color: #19d548;
+  color: #e1e1e1;
+}
+
+.bg-warning {
+  background-color: #d2d519;
+  color: #e1e1e1;
+}
+
+.color-warning {
+  color: #d2d519;
+}
+
+.border-warning {
+  border-color: #d2d519;
+}
+
+.hover-bg-warning:hover {
+  background-color: #d2d519;
+  color: #e1e1e1;
+}
+
+.bg-light {
+  background-color: #e1e1e1;
+  color: #222;
+}
+
+.color-light {
+  color: #e1e1e1;
+}
+
+.border-light {
+  border-color: #e1e1e1;
+}
+
+.hover-bg-light:hover {
+  background-color: #e1e1e1;
+  color: #222;
+}
+
+.bg-dark {
+  background-color: #222;
+  color: white;
+}
+
+.color-dark {
+  color: #222;
+}
+
+.border-dark {
+  border-color: #222;
+}
+
+.hover-bg-dark:hover {
+  background-color: #222;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #646464;
+  color: white;
+}
+
+.color-gray {
+  color: #646464;
+}
+
+.border-gray {
+  border-color: #646464;
+}
+
+.hover-bg-gray:hover {
+  background-color: #646464;
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-none {
+  background-color: transparent;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  color: #424242;
 }
 
 /* 
@@ -994,32 +1015,273 @@ code {
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
+  display: inline-block;
 }
 
-/* Forms */
-input, textarea {
-  margin-bottom: 1.2rem;
-}
-
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
-input[type='number'],
-select,
-textarea {
-  display: block;
-  width: calc(100%);
-  font-size: 1.2rem;
+input {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1em;
-  width: calc(100% - 2em);
+  display: block;
+  margin: 1em 0;
+  padding: .4em 1em;
   border: 1px solid #e1e1e1;
+  font-size: 1rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+  max-width: 100%;
+  width: calc(100%  - (1em * 2) - 2px);
+  font-family: inherit;
+}
+
+.form-control:focus {
+  border: 1px solid #1994d5;
+}
+
+.form-error {
+  color: #d31919;
+  border: 1px solid #d31919 !important;
+}
+
+.form-success {
+  color: #19d548;
+  border: 1px solid #19d548 !important;
+}
+
+.form-warning {
+  color: #d2d519;
+  border: 1px solid #d2d519 !important;
+}
+
+.form-with-label {
+  position: relative;
+  padding: 15px 0;
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #e1e1e1;
+  outline: 0;
+  font-size: 1rem;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #1994d5, #0e5f8a);
+     border-image: -webkit-gradient(linear, left top, right top, from(#1994d5), to(#0e5f8a));
+     border-image: linear-gradient(to right, #1994d5, #0e5f8a);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #1994d5;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* class applies to select element itself, not a wrapper element */
+select {
+  display: block;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #424242;
+  line-height: 1.3;
+  padding: .6em 1.4em .5em .8em;
+  width: 100%;
+  max-width: 100%;
+  /* useful when width is set to anything other than 100% */
+  margin: 0;
+  border: 1px solid #e1e1e1;
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
+		for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
+	*/
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23424242%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23424242%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+  background-position: right .7em top 50%, 0 0;
+  /* icon size, then gradient */
+  background-size: .65em auto, 100%;
+}
+
+/* Hide arrow icon in IE browsers */
+select::-ms-expand {
+  display: none;
+}
+
+/* Hover style */
+select:hover {
+  border-color: #888;
+}
+
+/* Focus style */
+select:focus {
+  border-color: #aaa;
+  /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+  -webkit-box-shadow: 0 0 1px 3px #1994d5;
+          box-shadow: 0 0 1px 3px #1994d5;
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+/* Set options to normal weight */
+select option {
+  font-weight: normal;
+}
+
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+*[dir="rtl"] select, :root:lang(ar) select, :root:lang(iw) select {
+  background-position: left .7em top 50%, 0 0;
+  padding: .6em .8em .5em 1.4em;
+}
+
+/* Disabled styles */
+select:disabled, select[aria-disabled=true] {
+  color: graytext;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+}
+
+select:disabled:hover, select[aria-disabled=true] {
+  border-color: #aaa;
+}
+
+.checkbox {
+  --background: #fff;
+  --border: #e1e1e1;
+  --border-hover: #BBC1E1;
+  --border-active: #424242;
+  --tick: white;
+  position: relative;
+  margin-right: .5em;
+}
+
+.checkbox input,
+.checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: var(--background);
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+          box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+}
+
+.checkbox input:hover {
+  --s: 2px;
+  --b: var(--border-hover);
+}
+
+.checkbox input:checked {
+  --b: var(--border-active);
+}
+
+.checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+          transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.checkbox.path input:checked {
+  --s: 2px;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.checkbox.path input:checked + svg {
+  --a: 16.1 86.12;
+  --o: 102.22;
+}
+
+.checkbox.path svg {
+  stroke-dasharray: var(--a, 86.12);
+  stroke-dashoffset: var(--o, 86.12);
+  -webkit-transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+  transition: stroke-dasharray .6s, stroke-dashoffset .6s;
 }
 
 .p {
@@ -1466,6 +1728,12 @@ textarea {
   border-left-width: 1px;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #e1e1e1;
+  margin: 1em 0;
+}
+
 /*************************************
 *   Hover states global
 **************************************
@@ -1484,6 +1752,10 @@ textarea {
   opacity: 1;
 }
 
+body {
+  font-family: 'Gotham A', 'Gotham B';
+}
+
 /*************************************
 *   Button component classes
 *   Extends mixins from
@@ -1493,7 +1765,6 @@ textarea {
 .btn {
   padding: 1em 2em;
   display: inline-block;
-  background-color: #1994d5;
   color: white;
 }
 
@@ -1503,7 +1774,127 @@ textarea {
   display: inline-block;
 }
 
-body {
-  font-family: 'Gotham A', 'Gotham B';
+i {
+  font-size: inherit !important;
+  color: currentColor;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+  .navbar.bg-primary nav a, .navbar.bg-secondary nav a, .navbar.bg-danger nav a, .navbar.bg-success nav a {
+    color: white;
+  }
+  .navbar nav a {
+    margin-right: 1em;
+    padding: 1em;
+    display: inline-block;
+  }
+  .navbar nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .navbar button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+  .navbar nav a {
+    margin-right: 1em;
+    padding: 1em;
+    display: inline-block;
+  }
+  .navbar nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .navbar button {
+    display: block;
+    border: none;
+    padding: 1.1em 1em 1em 1em;
+    border-radius: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #1994d5;
+    color: white;
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 20;
+  }
+  .navbar button i {
+    display: block;
+    color: currentColor;
+  }
+  .navbar nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 70%;
+    background-color: white;
+    z-index: 19;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+  }
+  .navbar nav.menu-active::before {
+    content: '';
+    height: 100vh;
+    width: 30%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.24);
+    top: 0;
+    right: 0;
+    z-index: 19;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease forwards;
+            animation: fadeIn 1s ease forwards;
+  }
+  .navbar nav.menu-active {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=makeup.css.map */

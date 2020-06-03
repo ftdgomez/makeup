@@ -3,9 +3,10 @@
 *   First, reset the browser style
 *   so we can modify all from there
 **************************************/
-@import './bones/colors';
 @import './bones/reset';
 // start the party
+@import './bones/colors';
+
 // Padding And Margin Utils
 @import './bones/layout';
 @import './bones/text';
@@ -19,10 +20,14 @@
 // hover fx
 @import './bones/hover';
 
-// Components
-@import './bones/components/btn';
-
 // Then, define the main-font
 body {
   font-family: 'Gotham A', 'Gotham B';
 }
+@import url(https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css);
+
+// Components
+@import './bones/components/btn';
+@import './bones/components/socials';
+@import './bones/components/navbar';
