@@ -81,3 +81,11 @@ code{
      opacity: 0;
   }
 }
+.rotateY{
+  transform: rotateY(-35deg) translateY(0);
+  box-shadow: 10px 4px 14px rgba(0, 0, 0, 0.12);
+  transition: .4s;
+  &:hover{
+    transform: rotateY(-35deg) translateY(-50px);
+  }
+}
