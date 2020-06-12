@@ -48,7 +48,7 @@ $wSet:
   // only mobile
   @for $i from 0 through 4{
     .grid-#{$i}{
-      display: grid;
+      display: block;
       grid-template-columns: 1fr;
     }
   }
