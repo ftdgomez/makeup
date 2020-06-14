@@ -685,32 +685,27 @@ querys
 
 @media screen and (max-width: 1024px) {
   .grid-0 {
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .grid-1 {
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .grid-2 {
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .grid-3 {
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .grid-4 {
-    display: -ms-grid;
-    display: grid;
+    display: block;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -1983,10 +1978,6 @@ hr {
   opacity: 1;
 }
 
-body {
-  font-family: 'Gotham A', 'Gotham B';
-}
-
 /*************************************
 *   Button component classes
 *   Extends mixins from
@@ -2087,7 +2078,7 @@ i {
     display: block;
     color: currentColor;
   }
-  .navbar nav {
+  .navbar .navbar-nav {
     position: fixed;
     top: 0;
     left: -100%;
@@ -2108,11 +2099,11 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-transition: .4s ease;
-    transition: .4s ease;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
   }
-  .navbar nav.menu-active::before {
-    content: '';
+  .navbar .navbar-nav.menu-active::before {
+    content: "";
     height: 100vh;
     width: 30%;
     position: fixed;
@@ -2124,7 +2115,7 @@ i {
     -webkit-animation: fadeIn 1s ease forwards;
             animation: fadeIn 1s ease forwards;
   }
-  .navbar nav.menu-active {
+  .navbar .navbar-nav.menu-active {
     left: 0;
   }
 }
