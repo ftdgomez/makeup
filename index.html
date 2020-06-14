@@ -1,177 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makeup Show Case</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeup Show Case</title>
 
-  <link rel="stylesheet" href="./src/makeup.css">
-</head>
-<body>
-  <header class="navbar bg-primary">
-    logo
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <button onclick="document.querySelector('.navbar > nav').classList.toggle('menu-active')"><i class="im im-menu-dot-v"></i></button>
-  </header>
-  <div class="container-xl pt-2 my-4">
-    <h2 class="text-lg">Basic Elements</h2>
-    <hr><!-- Separador -->
-    <!--===================================
+    <link rel="stylesheet" href="./src/makeup.css" />
+  </head>
+  <body>
+    <header class="navbar bg-primary">
+      logo
+      <nav class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button
+        onclick="document.querySelector('.navbar > nav').classList.toggle('menu-active')"
+      >
+        <i class="im im-menu-dot-v"></i>
+      </button>
+    </header>
+    <div class="container-xl pt-2 my-4">
+      <h2 class="text-lg">Basic Elements</h2>
+      <hr />
+      <!-- Separador -->
+      <!--===================================
     -   Buttons!
     =======================================
     -->
-    
-    <h4 class="text-md light">Buttons</h4>
-    <h5 class="mt-2">Pick yout style</h5>
-    <div>
-      <a class="btn hover-up" href="#">Default</a>
-      <a href="#" class="btn rounded hover-up">Rounded</a>
-      <a href="#" class="btn pill hover-up">Pill</a>
-      <a href="#" class="btn-outline hover-up">Outline</a>
-    </div>
-    <p class="whishper">
-      *for the hover fx use a <code>hover-</code> class.
-    </p>
-    <h5 class="mt-2">Pick your size</h5>
-    <div>
-      <a href="#" class="btn px-3 py-2 rounded">Large Btn</a>
-      <a href="#" class="btn p-1 rounded">Medium Btn</a>
-      <a href="#" class="btn p rounded">Small Btn</a>
-    </div>
-    <p class="whishper">*Use padding and margin utils to make it bigger or smaller.</p>
-    <h5 class="mt-2">Pick your color</h5>
-    <a href="#" class="btn bg-primary">Primary</a>
-    <a href="#" class="btn bg-secondary">Secondary</a>
-    <a href="#" class="btn bg-danger">Danger</a>
-    <a href="#" class="btn bg-warning">Warning</a>
-    <a href="#" class="btn bg-success">Success</a>
-    <hr><!-- Separador -->
-    <!--===================================
+
+      <h4 class="text-md light">Buttons</h4>
+      <h5 class="mt-2">Pick yout style</h5>
+      <div>
+        <a class="btn hover-up" href="#">Default</a>
+        <a href="#" class="btn rounded hover-up">Rounded</a>
+        <a href="#" class="btn pill hover-up">Pill</a>
+        <a href="#" class="btn-outline hover-up">Outline</a>
+      </div>
+      <p class="whishper">*for the hover fx use a <code>hover-</code> class.</p>
+      <h5 class="mt-2">Pick your size</h5>
+      <div>
+        <a href="#" class="btn px-3 py-2 rounded">Large Btn</a>
+        <a href="#" class="btn p-1 rounded">Medium Btn</a>
+        <a href="#" class="btn p rounded">Small Btn</a>
+      </div>
+      <p class="whishper">
+        *Use padding and margin utils to make it bigger or smaller.
+      </p>
+      <h5 class="mt-2">Pick your color</h5>
+      <a href="#" class="btn bg-primary">Primary</a>
+      <a href="#" class="btn bg-secondary">Secondary</a>
+      <a href="#" class="btn bg-danger">Danger</a>
+      <a href="#" class="btn bg-warning">Warning</a>
+      <a href="#" class="btn bg-success">Success</a>
+      <hr />
+      <!-- Separador -->
+      <!--===================================
       -   Links!
       =======================================
     -->
-    <h4 class="text-md normal">Links</h4>
-    <div>
-      <a class="color-primary mr-1" href="#">This is a link</a>
-      <a class="color-secondary mr-1" href="#">This is a link</a>
-      <a class="color-danger mr-1" href="#">This is a link</a>
-      <a class="color-primary mr-1" href="#">This is a link</a>
-      <a class="color-warning mr-1" href="#">This is a link</a>
-      <a class="color-success mr-1" href="#">This is a link</a>
-    </div>
-    <p class="whishper">*Just use an anchor tag with a <code>color-</code> class</p>
-    <hr><!-- Separador -->
-    <h4 class="text-md normal">Inputs (Without labels)</h4>
-    <div class="grid-4 gap-1">
-      <input class="form-control rounded" type="text" placeholder="Some text input...">
-      <input class="form-control form-error rounded" type="text" placeholder="Error input..." value="Error input...">
-      <input class="form-control form-success rounded" type="text" placeholder="Success input...">
-      <input class="form-control form-warning rounded" type="text" placeholder="Warning input...">
-    </div>
-    <hr><!-- Separador -->
-    <!--===================================
+      <h4 class="text-md normal">Links</h4>
+      <div>
+        <a class="color-primary mr-1" href="#">This is a link</a>
+        <a class="color-secondary mr-1" href="#">This is a link</a>
+        <a class="color-danger mr-1" href="#">This is a link</a>
+        <a class="color-primary mr-1" href="#">This is a link</a>
+        <a class="color-warning mr-1" href="#">This is a link</a>
+        <a class="color-success mr-1" href="#">This is a link</a>
+      </div>
+      <p class="whishper">
+        *Just use an anchor tag with a <code>color-</code> class
+      </p>
+      <hr />
+      <!-- Separador -->
+      <h4 class="text-md normal">Inputs (Without labels)</h4>
+      <div class="grid-4 gap-1">
+        <input
+          class="form-control rounded"
+          type="text"
+          placeholder="Some text input..."
+        />
+        <input
+          class="form-control form-error rounded"
+          type="text"
+          placeholder="Error input..."
+          value="Error input..."
+        />
+        <input
+          class="form-control form-success rounded"
+          type="text"
+          placeholder="Success input..."
+        />
+        <input
+          class="form-control form-warning rounded"
+          type="text"
+          placeholder="Warning input..."
+        />
+      </div>
+      <hr />
+      <!-- Separador -->
+      <!--===================================
     -   FORM INPUTS
     =======================================
     -->
-    <h4 class="text-md normal">Inputs (With labels)</h4>
-    <div class="flex justify-between">
-      <div class="form-with-label">
-        <input class="form__field" id="name" name="name" type="text" placeholder="Some text input..." autocomplete="off">
-        <label class="form__label" for="name">Name</label>
+      <h4 class="text-md normal">Inputs (With labels)</h4>
+      <div class="flex justify-between">
+        <div class="form-with-label">
+          <input
+            class="form__field"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Some text input..."
+            autocomplete="off"
+          />
+          <label class="form__label" for="name">Name</label>
+        </div>
       </div>
-    </div>
-    <!--===================================
+      <!--===================================
     -   FORM SELECT
     =======================================
     -->
-    <h4 class="text-md normal">Inputs Select</h4>
-    <select>
-      <option>This is a native select element</option>
-      <option>Apples</option>
-      <option>Bananas</option>
-      <option>Grapes</option>
-      <option>Oranges</option>
-    </select>
-    <!--===================================
+      <h4 class="text-md normal">Inputs Select</h4>
+      <select>
+        <option>This is a native select element</option>
+        <option>Apples</option>
+        <option>Bananas</option>
+        <option>Grapes</option>
+        <option>Oranges</option>
+      </select>
+      <!--===================================
     -   TEXTAREA
     =======================================
     -->
-    <h4 class="text-md normal">Textarea</h4>
-    <textarea class="form-control" placeholder="This is a text area..."></textarea>
-    <!--===================================
+      <h4 class="text-md normal">Textarea</h4>
+      <textarea
+        class="form-control"
+        placeholder="This is a text area..."
+      ></textarea>
+      <!--===================================
     -   CHECKBOXES
     =======================================
     -->
-    <div>
-      <label class="flex align-center" for="checkbox1">
-        <span class="checkbox path">
-          <input id="checkbox1" type="checkbox">
-          <svg viewBox="0 0 21 21">
-              <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
-          </svg>
-        </span>
-        <p>Hello</p>
-      </label>
-    </div>
-    <hr>
-    <!--===================================
+      <div>
+        <label class="flex align-center" for="checkbox1">
+          <span class="checkbox path">
+            <input id="checkbox1" type="checkbox" />
+            <svg viewBox="0 0 21 21">
+              <path
+                d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"
+              ></path>
+            </svg>
+          </span>
+          <p>Hello</p>
+        </label>
+      </div>
+      <hr />
+      <!--===================================
     -   Cards!
     =======================================
     -->
-    <h4 class="text-md normal">Cards!</h4>
-    <div class="grid-4 gap-1 mb-1">
-      <div class="card">
-        <p>Card Content</p>
+      <h4 class="text-md normal">Cards!</h4>
+      <div class="grid-4 gap-1 mb-1">
+        <div class="card">
+          <p>Card Content</p>
+        </div>
+        <div class="card">
+          <p>Card Content</p>
+        </div>
+        <div class="card">
+          <p>Card Content</p>
+        </div>
+        <div class="card">
+          <p>Card Content</p>
+        </div>
       </div>
-      <div class="card">
-        <p>Card Content</p>
-      </div>
-      <div class="card">
-        <p>Card Content</p>
-      </div>
-      <div class="card">
-        <p>Card Content</p>
-      </div>
-    </div>
 
-    <button onclick="document.querySelector('.modal').classList.toggle('modal-active')" class="btn waves rounded bold">Open Modal</button>
-    <div class="modal">
-      <div class="card card-hover rounded-xl">
-        <div class="card-header">
-          <img class="circle size-1" src="https://api.adorable.io/avatars/150/ftdgomez@adorable.io.png" alt="">
-          <h4 class="text-md">Hello World</h4>
-        </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, in alias, quod deserunt eveniet minima nostrum saepe doloribus facilis, quia id?</p>
-          <a href="#" class="btn rounded hover-bg-dark">Read more</a>
-        </div>
-        <div class="card-footer">
-          <p class="whishper text-right">Lorem ipsum dolor sit.</p>
+      <button
+        onclick="document.querySelector('.modal').classList.toggle('modal-active')"
+        class="btn waves rounded bold"
+      >
+        Open Modal
+      </button>
+      <div class="modal">
+        <div class="card card-hover rounded-xl">
+          <div class="card-header">
+            <img
+              class="circle size-1"
+              src="https://api.adorable.io/avatars/150/ftdgomez@adorable.io.png"
+              alt=""
+            />
+            <h4 class="text-md">Hello World</h4>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, in
+              alias, quod deserunt eveniet minima nostrum saepe doloribus
+              facilis, quia id?
+            </p>
+            <a href="#" class="btn rounded hover-bg-dark">Read more</a>
+          </div>
+          <div class="card-footer">
+            <p class="whishper text-right">Lorem ipsum dolor sit.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div><!-- End Container -->
-<script>
-  const surface = document.querySelectorAll('.waves');
-  function ripple(e){
-    let circle = document.createElement("div");
-    let maxLarge = Math.max(this.clientWidth, this.clientHeight);
-    let rectSurface = this.getBoundingClientRect();
-    let time = (Math.log(maxLarge)/Math.log(Math.exp(1)))/11;
-    circle.style.width = circle.style.height = maxLarge + "px";
-    circle.style.left = e.clientX - rectSurface.left -maxLarge/2 + "px";
-    circle.style.top = e.clientY - rectSurface.top -maxLarge/2 + "px";
-    circle.classList.add("ripple");
-    circle.style.animation = `ripple ${time}s ease-in`;
-    if(this.classList.contains("waves-dark")) circle.classList.add("ripple-dark");
-    this.appendChild(circle);
-    setTimeout(() => this.removeChild(circle),time*1000); 
-  }
-  for(let i=0;i<surface.length;i++) surface[i].addEventListener('click', ripple);
-</script>
-</body>
+    <!-- End Container -->
+    <script>
+      const surface = document.querySelectorAll(".waves");
+      function ripple(e) {
+        let circle = document.createElement("div");
+        let maxLarge = Math.max(this.clientWidth, this.clientHeight);
+        let rectSurface = this.getBoundingClientRect();
+        let time = Math.log(maxLarge) / Math.log(Math.exp(1)) / 11;
+        circle.style.width = circle.style.height = maxLarge + "px";
+        circle.style.left = e.clientX - rectSurface.left - maxLarge / 2 + "px";
+        circle.style.top = e.clientY - rectSurface.top - maxLarge / 2 + "px";
+        circle.classList.add("ripple");
+        circle.style.animation = `ripple ${time}s ease-in`;
+        if (this.classList.contains("waves-dark"))
+          circle.classList.add("ripple-dark");
+        this.appendChild(circle);
+        setTimeout(() => this.removeChild(circle), time * 1000);
+      }
+      for (let i = 0; i < surface.length; i++)
+        surface[i].addEventListener("click", ripple);
+    </script>
+  </body>
 </html>

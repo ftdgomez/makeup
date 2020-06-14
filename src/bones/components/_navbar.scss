@@ -1,6 +1,5 @@
-@media screen and (min-width: 1024px)
-{
-  .navbar{
+@media screen and (min-width: 1024px) {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,43 +7,42 @@
     &.bg-primary,
     &.bg-secondary,
     &.bg-danger,
-    &.bg-success{
-      nav a{
+    &.bg-success {
+      nav a {
         color: white;
       }
     }
-    nav a{
+    nav a {
       margin-right: 1em;
       padding: 1em;
       display: inline-block;
-      &:hover{
-        background-color: rgba($color: #000000, $alpha: .2);
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.2);
         border-radius: 4px;
       }
     }
-    button{
+    button {
       display: none;
     }
-  }  
+  }
 }
 
-@media screen and (max-width: 1024px)
-{
-  .navbar{
+@media screen and (max-width: 1024px) {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    nav a{
+    nav a {
       margin-right: 1em;
       padding: 1em;
       display: inline-block;
-      &:hover{
-        background-color: rgba($color: #000000, $alpha: .2);
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.2);
         border-radius: 4px;
       }
     }
-    button{
+    button {
       display: block;
       border: none;
       padding: 1.1em 1em 1em 1em;
@@ -54,15 +52,15 @@
       justify-content: center;
       background-color: $primary-color;
       color: white;
-      box-shadow: 2px 2px 8px rgba($color: #000000, $alpha: .2);
+      box-shadow: 2px 2px 8px rgba($color: #000000, $alpha: 0.2);
       position: relative;
       z-index: 20;
-      i{
+      i {
         display: block;
         color: currentColor;
       }
     }
-    nav{
+    .navbar-nav {
       position: fixed;
       top: 0;
       left: -100%;
@@ -74,9 +72,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      transition: .4s ease;
-      &.menu-active::before{
-        content: '';
+      transition: 0.4s ease;
+      &.menu-active::before {
+        content: "";
         height: 100vh;
         width: 30%;
         position: fixed;
@@ -87,9 +85,9 @@
         opacity: 0;
         animation: fadeIn 1s ease forwards;
       }
-      &.menu-active{
+      &.menu-active {
         left: 0;
       }
     }
-  }  
+  }
 }
