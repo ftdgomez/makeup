@@ -1,64 +1,76 @@
-
-.m-auto{
+.m-auto {
   margin: auto;
 }
 
-.mx-auto{
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-auto{
+.my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
 
-.m{
-  margin: .5rem;
+.mr-auto {
+  margin-right: auto;
 }
-.mb{
-  margin-bottom: .5rem;
+
+.m {
+  margin: 0.5rem;
 }
-.mr{
-  margin-right: .5rem;
+.mb {
+  margin-bottom: 0.5rem;
 }
-.ml{
-  margin-left: .5rem;
+.mr {
+  margin-right: 0.5rem;
 }
-.mt{
-  margin-top: .5rem;
+.ml {
+  margin-left: 0.5rem;
 }
-.my{
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+.mt {
+  margin-top: 0.5rem;
 }
-.mx{
-  margin-left: .5rem;
-  margin-right: .5rem;
+.my {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mx {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 // Margin
-@for $i from 0 through 4{
-  .m-#{$i}{
+@for $i from 0 through 4 {
+  .m-#{$i} {
     margin: 0em + $i;
   }
-  .mb-#{$i}{
+  .mb-#{$i} {
     margin-bottom: 0em + $i;
   }
-  .mr-#{$i}{
+  .mr-#{$i} {
     margin-right: 0em + $i;
   }
-  .ml-#{$i}{
+  .ml-#{$i} {
     margin-left: 0em + $i;
   }
-  .mt-#{$i}{
+  .mt-#{$i} {
     margin-top: 0em + $i;
   }
-  .my-#{$i}{
+  .my-#{$i} {
     margin-bottom: 0em + $i;
     margin-top: 0em + $i;
   }
-  .mx-#{$i}{
+  .mx-#{$i} {
     margin-right: 0em + $i;
     margin-left: 0em + $i;
   }
