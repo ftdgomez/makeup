@@ -10,9 +10,11 @@
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/ftdgomez/makeup/src/makeup.min.css"
+  href="https://cdn.jsdelivr.net/gh/ftdgomez/makeup/src/fonts/gotham.css"
 />
 ```
+
+By default includes Animate.css and Iconmonster
 
 ## Beauty enchancer css framework
 
