@@ -5,14 +5,11 @@ flex
 querys
 */
 
-$wSet:
-  "container" 1024,
-  "container-sm" 700,
-  "container-lg" 1280,
+$wSet: "container" 1024, "container-sm" 700, "container-lg" 1280,
   "container-xl" 1366;
 
 @each $name, $w in $wSet {
-  .#{$name}{
+  .#{$name} {
     max-width: #{$w}px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -21,33 +18,31 @@ $wSet:
   }
 }
 
-@for $i from 0 through 4{
-  .fgrid-#{$i}{
+@for $i from 0 through 4 {
+  .fgrid-#{$i} {
     display: grid;
     grid-template-columns: repeat(#{$i}, 1fr);
   }
 }
 
-@media screen and (min-width: 1024px)
-{
+@media screen and (min-width: 1024px) {
   // only pc
-  @for $i from 0 through 4{
-    .grid-#{$i}{
+  @for $i from 0 through 4 {
+    .grid-#{$i} {
       display: grid;
       grid-template-columns: repeat(#{$i}, 1fr);
     }
-    .gap-#{$i}{
+    .gap-#{$i} {
       column-gap: 0em + $i;
-      grid-gap: 0em  + $i;
+      grid-gap: 0em + $i;
     }
   }
 }
 
-@media screen and (max-width: 1024px)
-{
+@media screen and (max-width: 1024px) {
   // only mobile
-  @for $i from 0 through 4{
-    .grid-#{$i}{
+  @for $i from 0 through 4 {
+    .grid-#{$i} {
       display: block;
       grid-template-columns: 1fr;
     }
@@ -55,69 +50,68 @@ $wSet:
 }
 
 // flex utils
-.flex{
+.flex {
   display: flex;
 }
 
-.column{
+.column {
   flex-direction: column;
 }
-.column-revese{
+.column-revese {
   flex-direction: column-reverse;
 }
 
-.align-center{
+.align-center {
   align-items: center;
 }
-.justify-center{
+.justify-center {
   justify-content: center;
 }
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
-.justify-end{
+.justify-end {
   justify-content: flex-end;
 }
-.justify-start{
+.justify-start {
   justify-content: flex-start;
 }
-.justify-evenly{
+.justify-evenly {
   justify-content: space-evenly;
 }
-.align-end{
+.align-end {
   align-items: flex-end;
 }
-.align-start{
+.align-start {
   align-items: flex-start;
 }
 
-@mixin all-to-center{
+@mixin all-to-center {
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.all-to-center{
+.all-to-center {
   @include all-to-center;
 }
 
-.d-block{
+.d-block {
   display: block;
 }
 
-.d-inline-block{
-  display: block;
+.d-inline-block {
+  display: inline-block;
 }
-.d-none{
+.d-none {
   display: none;
 }
 
-
-.relative{
+.relative {
   position: relative;
 }
 
-.absolute{
+.absolute {
   position: absolute;
 }
